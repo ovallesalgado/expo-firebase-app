@@ -1,11 +1,20 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import AppButton from './aplication/components/AppButton';
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
+       <AppButton
+       bgColor="rgba(111, 38, 74, 0.7)"
+       title="Test"
+       action={()=>console.log(1)}
+       iconName="sign-in"
+       iconSize={30}
+       iconColor="#fff"
+       />
+
       </View>
     );
   }
