@@ -3,6 +3,11 @@ import { StyleSheet, Text, View } from 'react-native';
 import AppButton from './aplication/components/AppButton';
 import PreLoader from './aplication/components/PreLoader';
 import BackgroundImage from './aplication/components/BackgroundImage';
+import Start from './aplication/screens/Start';
+import firebaseConf from './aplication/utils/firebase';
+import * as firebase from 'firebase';
+firebase.initializeApp(firebaseConfig);
+
 
 export default class App extends React.Component {
   render() {
@@ -12,7 +17,7 @@ export default class App extends React.Component {
      source={require('./assets/images/login-bg.jpg')}
      >
      
-     <Text style={{color:'#fff', marginTop:100}}>Hola</Text>
+        <Start/>
      </BackgroundImage>
 
      
