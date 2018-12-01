@@ -8,17 +8,12 @@ import firebaseConf from './aplication/utils/firebase';
 import * as firebase from 'firebase';
 firebase.initializeApp(firebaseConfig);
 
-
+import GuestNavigation from './aplication/navigations/guest';
 export default class App extends React.Component {
   render() {
     return (
      
-     <BackgroundImage
-     source={require('./assets/images/login-bg.jpg')}
-     >
-     
-        <Start/>
-     </BackgroundImage>
+     <GuestNavigation/>
 
      
     );
