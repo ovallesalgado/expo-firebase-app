@@ -9,6 +9,9 @@ import * as firebase from 'firebase';
 
 export default class Start extends Component {
 
+static navigationOptions={
+     title:'Expo App'
+};
     login(){
 
     }
